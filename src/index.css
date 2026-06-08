@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: url(./component/asset/alex-shutin-kKvQJ6rK6S4-unsplash.jpg); */
+  background: url(alex-shutin-kKvQJ6rK6S4-unsplash.jpg);
+  
+}
+.form{
+  width:90%;
+  max-width:380px ;
+  padding:105px;
+  background: transparent;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  backdrop-filter:blur(30px) ;
+  /* background: rgba(255, 255, 255, 0.75); */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08),inset 0 1px 1px rgba(255, 255, 255, 0.6);
+
+
+Sabhi inputs ke liye autofill color fix
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #f0f4f8 inset !important;
+    -webkit-text-fill-color: #333333 !important;
+}
+
+
+
+ }
+.text-area{
+ width: 250px; 
+height: 35px;
+margin: 10px 0;
+padding: 10px;
+border: 1px solid rgba(0,0,0,0.15);
+/* border-radius: 8px; */
+font-size: 16px;
+background: transparent;
+ border-radius: 6px;
+outline: none;
+ border-color: 475569;
+  box-shadow: 0 0 5px rgba(10, 14, 10, 0.2);
+color: #475569;
+font-family: geist sans;
+}
+.text-area::placeholder{
+font-family: plus jakarta sans;
+font-size: 15px;
+opacity: 1px;
+}
+
+
+
+ .title{
+  color: #1e293b;
+  text-align: center;
+  position: relative;
+    top: -80px;  
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+ margin-bottom: -60px;
+  white-space: nowrap;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.click{
+  width: 250px; 
+height: 35px;
+background: #00040a;
+margin-top: 15px;
+padding: 7px;
+color: white;
+border-radius: 6px;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:black;
+border: none;
+outline: none;
+background: linear-gradient(180deg,#1e223d 0%,#0d0f1e 100%);
+box-shadow: 0px 4px 10px rgba(13,15,30,0.3);
+transition: all 0.3s ease;
+}
+.click:hover{
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(13,15,30,0.4);
+}
+.click:active{
+  transform: translateY(2px);
+  box-shadow: 0px 2px 5px rgba(13,15,30,0.2);
+}
+
+.link{
+ /* margin-right: 60px; */
+ margin-left: 165px;
+ margin-top: -13px;
+ white-space: nowrap;
+ font-weight: bold;
+ color: #475569;
+}
+
+
+.remember-me{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  font-size: 12px;
+ margin-top: 10px;
+ justify-content: flex-start;
+ margin-left: -80px;
+ background: transparent;
+ accent-color: #01050b;
+/*  */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  
+   width: 16px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(0, 0, 0, 0.2); 
+  border-radius: 4px; 
+  outline: none;
+  cursor: pointer;
+  display: inline-grid;
+  place-content: center;
+  transition: all 0.2s ease; 
+}
+
+
+input[type="checkbox"]:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #1e223d;
+}
+
+
+input[type="checkbox"]:checked {
+  background-color: #1e223d; 
+  border-color: #1e223d;
+}
+
+
+input[type="checkbox"]:checked::before {
+  content: "";
+  width: 8px;
+  height: 4px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg) translate(1px, -1px);
+}
+} 
+.remember-me label{
+  white-space: nowrap;
+}
+.option{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+signup-link {
+  text-align: center;
+  margin-top: -10px;
+  white-space: nowrap;
+  display: flex;
+}
+
+.signup-link p {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.signup-link a {
+  color: #475569;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+.social-icon-btn img{
+  width: 24px !important;
+  height: 24px !important;
+  object-fit: contain;
+  display: block;
+}
